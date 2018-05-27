@@ -7,10 +7,6 @@ class School
     @school_name = school_name
   end
   
-  def roster 
-    RECORDS
-  end
-  
   def add_student(student_name, grade)
     @student_name = student_name
     @grade = grade
