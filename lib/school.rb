@@ -22,9 +22,7 @@ class School
   end
 
   def sort
-    @roster.sort
-    @roster.sort.map { |a,b| [a, b.sort] }
-    @roster
+    @roster.sort.map { |a,b| [a, b.sort] }.to_h
   end
 
 end
