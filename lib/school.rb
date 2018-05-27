@@ -15,8 +15,8 @@ class School
     if @roster.keys.include?(grade)
       @roster[grade] << student_name
     else
-      RECORDS[grade] = []
-      RECORDS[grade] << student_name
+      @roster[grade] = []
+      @roster[grade] << student_name
     end
   end
 
