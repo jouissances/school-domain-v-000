@@ -10,10 +10,9 @@ class School
   def add_student(student_name, grade)
     @student_name = student_name
     @grade = grade
-    @records[grade] = []
-    @records = {
-      grade => [student_name]
-    }
+    records = {}
+    records[grade] = []
+    records[grade] << student_name
   end
 
 end
